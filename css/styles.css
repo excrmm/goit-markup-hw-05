@@ -419,26 +419,25 @@ padding-right: 50px;
 .gallery-div{
 position:absolute;
 background: rgba(47, 48, 58, 0.8);
-top:0;
+
 bottom:0;
-padding-top:27px;
-margin-top:224px;
-text-align: center;
-width: 370px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 70px;
 
 }
 
 .gallery-text{
-font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
+    line-height: 1.19;
+
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--btn-ftr-color);
 }
 /*===========GALLERY=========*/
 
@@ -551,9 +550,9 @@ font-family: 'Roboto';
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  .clients-icons{
@@ -562,15 +561,10 @@ font-family: 'Roboto';
     fill: currentColor;
     
 }
-.clients-icons:hover,
-.clients-icons:focus{
-    color: var(--button-color);
-}
 
 .our-clients-link:hover,
 .our-clients-link:focus{
     border-color: var(--button-color);
-    border-radius: 4px;
     color: var(--button-color);
 }
 .our-clients-item:not(:last-child){
@@ -602,8 +596,8 @@ font-family: 'Roboto';
     
     color: var(--btn-ftr-color);
     transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-mail{
     font-size: 14px;
@@ -614,8 +608,8 @@ font-family: 'Roboto';
     
     color: var(--contact-color);
     transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .footer-contact-phone-number{
@@ -627,8 +621,8 @@ font-family: 'Roboto';
     
     color: var(--contact-color);
     transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact-mail:hover,
 .footer-contact-mail:focus {
@@ -699,8 +693,8 @@ font-family: 'Roboto';
     background-color: var(--footer-icon-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-cont1 {
     margin-right: 64px;
@@ -708,11 +702,11 @@ font-family: 'Roboto';
 
 .footer-title{
 
-        font-weight: 700;
-        line-height: 1.62;
-        text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.62;
+    text-transform: uppercase;
     
-        color: var(--btn-ftr-color);
+    color: var(--btn-ftr-color);
        
 }
 
@@ -729,10 +723,10 @@ font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    /*letter-spacing: 0.03em;*/
+    letter-spacing: 0.03em;
     background-color: var(--employees-color);
     color: var(--tittle-color);
-    box-shadow: 0px 3px 1px rgba(0,0,0,0.1),0px 1px 2px rgba(0, 0, );
+    
     border: none;
     padding: 6px 22px 6px 22px;
     transition-property: background-color, color, box-shadow;
